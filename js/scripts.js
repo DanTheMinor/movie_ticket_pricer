@@ -1,6 +1,3 @@
-//ticket attributes
-//time, new-release, age, name, price
-
 function Ticket(name, newRelease){
   this.name = name;
   this.time = [];
@@ -23,19 +20,47 @@ Ticket.prototype.setPrice = function(time, age) {
   else if (parseInt(timeArray[1]) < 8) {
     newPrice -= 2;
   }
+  if (this.newRelease === true) {
+    newPrice += 8;
+  }
+
+
   return newPrice;
 };
-//inputtedTime = whatever
-//inputtedName = whatever
-//inputtedPrice = initial
-// newTicket.where(name = "django").time =
-//
-// var newTime = {time: 630}
-//
-// newMovie.time.push(newTime)
-//
-// newMovie.setTime(630);
-//
-// var setTime = function(time) {
-//   this.time.push(time)
-// }
+
+
+$(function(){
+  $(".add-time").click(function(){
+    $(".new-time").append('<input type="text" required class="input-time form-control" style= "width:300">' +
+                            '<br>');
+  });
+
+  $("form#ticket").submit(function(event) {
+    event.preventDefault();
+    inputtedName = $("#input-name").val();
+    inputtedRelease = $("#input-release").val();
+
+    var newMovie = new Ticket(inputtedName, inputtedRelease);
+
+
+    $(".new-time").each(function() {
+      var inputtedTime = $(this).find("input.input-time").val();
+
+      newMovie.time.push(inputtedTime);
+
+      // newMovie.time.forEach(function(element)
+      //   var newPrice = this.price(element);
+      // )
+     });
+
+    $(".movie").append("<li>" + newMovie.name + "</li>");
+
+
+   //debugger;
+
+
+      $(".show-movie").show()
+  });
+
+
+});

@@ -1,42 +1,10 @@
-#result {
-  display: none;
-}
-.show-place{
+.show-movie {
   display: none;
 }
 
-#place-results li{
-  cursor: pointer;
+.show-movie li{
   color: #0088cc;
 }
-
-#place-results li:hover {
+.show-movie li:hover{
   text-decoration: underline;
-}
-
-.place-info {
-  float: right;
-  background-color: white;
-  border-radius: 10px;
-  display: none;
-}
-
-.bottom-border {
-  border-bottom: 1px solid black;
-}
-
-img{
-    width:100%; /* you can use % */
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-#place-results{
-  list-style-type: none;
-}
-
-#buttons {
-  margin: 5px;
-  padding-bottom: 10px;
 }

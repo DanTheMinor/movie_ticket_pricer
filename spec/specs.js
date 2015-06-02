@@ -1,17 +1,22 @@
 describe("Ticket", function() {
+  it('Can determine price for new-releases', function() {
+    var newTicket = new Ticket("Indiana Jones", true);
+    expect(newTicket.setPrice("18:00", 18)).to.equal(20);
+  })
 
   it('Can determine price for matinee', function(){
-    var newTicket = new Ticket("Indiana Jones", 12, true);
+    var newTicket = new Ticket("Indiana Jones", false);
     expect(newTicket.setPrice("15:30", 18)).to.equal(10);
   });
   it('Can determine price for age', function() {
-    var newTicket = new Ticket("Indiana Jones", 12, true);
+    var newTicket = new Ticket("Indiana Jones", false);
     expect(newTicket.setPrice("18:00", 12)).to.equal(9);
   })
   it('Can determine price for age', function() {
-    var newTicket = new Ticket("Indiana Jones", 12, true);
-    expect(newTicket.setPrice("15:00", 12)).to.equal(7);
+    var newTicket = new Ticket("Indiana Jones", false);
+    expect(newTicket.setPrice("15:30", 12)).to.equal(7);
   })
+
 
   it("Can create ticket object", function() {
     //name, time

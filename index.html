@@ -1,0 +1,42 @@
+<!-- <!Doctype html> -->
+<html>
+  <head>
+    <script src= "js/jquery-1.11.3.js"></script>
+    <script src= "js/scripts.js"></script>
+    <link rel= "stylesheet" href= "css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css">
+    <title>MoviePhone the Greatest!</title>
+  </head>
+  <body>
+    <div class= "container">
+      <div class= "jumbotron">
+        <h1> MOVIEPHONE CLONE THE GREATEST </h1>
+      </div>
+      <div class="show-movie">
+
+        <ul class="movie"><h2> Movies</h2>
+        </ul>
+      </div>
+      <!--START OF THE FORM-->
+      <form id="ticket">
+        <label for="input-name">Set your movie name:</label>
+        <input type="text" required id="input-name" name="input-name" class="form-control" style= "width:300">
+        <br>
+        <label for="input-release">Is your movie a new release?</label>
+        <select id="input-release">
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+        <br><br>
+        <div class= "new-time">
+          <label for="input-time">What is a time your movie will be playing (in military):</label>
+          <input type="text" required class="input-time form-control" style= "width:300">
+          <br>
+        </div>
+        <button type="submit" class="btn btn-success">Submit Movie</button>
+        <span class="btn btn-info add-time">Add More Times</span>
+        </select>
+      </form>
+      <!--END OF THE FORM-->
+  </body>
+</html>
