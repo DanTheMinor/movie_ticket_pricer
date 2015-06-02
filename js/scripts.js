@@ -73,10 +73,12 @@ $(function(){
         $(".display-times").text("");
 
         newMovie.time.forEach(function(element) {
-          $(".display-times").append("<li>" + "<span class=time>"  + element + "</span>" + "</li>");
+          $(".display-times").append("<li>" +'<a href="#openModal">' + "<span class=time>"  + element + "</span>" + "</a>" + "</li>");
 
           $(".time").last().click(function() {
               $(".show-prices").show();
+              $(".overlay").show(); //THIS IS FOR THE MODAL
+              $("openModal").show();
               $("#kids").text(newMovie.setPrice(element, 12));
               $("#adults").text(newMovie.setPrice(element, 13));
               $("#seniors").text(newMovie.setPrice(element, 55));

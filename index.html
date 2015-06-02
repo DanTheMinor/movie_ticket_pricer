@@ -5,13 +5,13 @@
     <script src= "js/scripts.js"></script>
     <link rel= "stylesheet" href= "css/styles.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css">
-    <title>MoviePhone the Greatest!</title>
+
+    <title>Moviefone the Greatest!</title>
   </head>
   <body>
     <div class= "container">
-      <div class= "jumbotron">
-        <h1> MOVIEPHONE CLONE THE GREATEST </h1>
-      </div>
+
+        <h1> MOVIEFONE CLONE THE GREATEST </h1>
 
       <div class="row">
         <div class="col-md-4">
@@ -31,15 +31,15 @@
         </div>
         <div class="col-md-4">
           <div class="show-prices">
-            <h3>Kids <span id="kids"></span></h3>
+            <!-- <h3>Kids <span id="kids"></span></h3>
             <h3>Adults <span id="adults"></span></h3>
-            <h3>Seniors <span id="seniors"></span> </h3>
+            <h3>Seniors <span id="seniors"></span> </h3> -->
           </div>
         </div>
       </div>
 
 
-        <!--START OF THE FORM-->
+      <!--START OF THE FORM-->
       <div class="row">
         <form id="ticket">
           <label for="input-name">Set your movie name:</label>
@@ -61,7 +61,21 @@
           </select>
         </form>
       </div>
-          <!--END OF THE FORM-->
+      <!--END OF THE FORM-->
 
+        <a href="#openModal">Open Modal</a>
+
+            <div id="openModal" class="modalDialog">
+	           <div>
+		           <a href="#close" title="Close" class="close">X</a>
+
+                <h2> Price of Your Movie</h2>
+                <h3>Kids: <span id="kids"></span></h3>
+                <h3>Adults: <span id="adults"></span></h3>
+                <h3>Seniors: <span id="seniors"></span> </h3>
+	             </div>
+             </div>
+
+    </div>
   </body>
 </html>
