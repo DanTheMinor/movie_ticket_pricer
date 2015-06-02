@@ -1,10 +1,22 @@
-.show-movie {
+.show-movies {
   display: none;
 }
 
-.show-movie li{
+.show-movies li{
   color: #0088cc;
 }
-.show-movie li:hover{
+.show-movies li:hover{
+  text-decoration: underline;
+}
+
+.show-prices {
+  display: none;
+}
+
+.show-times li {
+  color: #0088cc;
+}
+
+.show-times li:hover{
   text-decoration: underline;
 }

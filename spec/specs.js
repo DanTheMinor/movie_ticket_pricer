@@ -16,7 +16,10 @@ describe("Ticket", function() {
     var newTicket = new Ticket("Indiana Jones", false);
     expect(newTicket.setPrice("15:30", 12)).to.equal(7);
   })
-
+  it('Can determine price for age', function() {
+    var newTicket = new Ticket("Indiana Jones", false);
+    expect(newTicket.setPrice("2030", 12)).to.equal(12);
+  })
 
   it("Can create ticket object", function() {
     //name, time

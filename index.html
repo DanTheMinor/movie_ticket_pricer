@@ -12,31 +12,56 @@
       <div class= "jumbotron">
         <h1> MOVIEPHONE CLONE THE GREATEST </h1>
       </div>
-      <div class="show-movie">
 
-        <ul class="movie"><h2> Movies</h2>
-        </ul>
-      </div>
-      <!--START OF THE FORM-->
-      <form id="ticket">
-        <label for="input-name">Set your movie name:</label>
-        <input type="text" required id="input-name" name="input-name" class="form-control" style= "width:300">
-        <br>
-        <label for="input-release">Is your movie a new release?</label>
-        <select id="input-release">
-          <option value="true">Yes</option>
-          <option value="false">No</option>
-        </select>
-        <br><br>
-        <div class= "new-time">
-          <label for="input-time">What is a time your movie will be playing (in military):</label>
-          <input type="text" required class="input-time form-control" style= "width:300">
-          <br>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="show-movies">
+            <ul class="movies"><h2> Movies</h2>
+
+            </ul>
+          </div>
         </div>
-        <button type="submit" class="btn btn-success">Submit Movie</button>
-        <span class="btn btn-info add-time">Add More Times</span>
-        </select>
-      </form>
-      <!--END OF THE FORM-->
+        <div class="col-md-4">
+          <div class="show-times">
+            <h2></h2>
+            <ul class="display-times">
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="show-prices">
+            <h3>Kids <span id="kids"></span></h3>
+            <h3>Adults <span id="adults"></span></h3>
+            <h3>Seniors <span id="seniors"></span> </h3>
+          </div>
+        </div>
+      </div>
+
+
+        <!--START OF THE FORM-->
+      <div class="row">
+        <form id="ticket">
+          <label for="input-name">Set your movie name:</label>
+          <input type="text" required id="input-name" name="input-name" class="form-control" style= "width:300">
+          <br>
+          <label for="input-release">Is your movie a new release?</label>
+          <select id="input-release">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+          <br><br>
+          <div class="new-time">
+            <label for="input-time">What is a time your movie will be playing (in military):</label>
+            <input type="text" class="input-time form-control" style= "width:300">
+            <br>
+          </div>
+          <button type="submit" class="btn btn-success">Submit Movie</button>
+          <span class="btn btn-info add-time">Add More Times</span>
+          </select>
+        </form>
+      </div>
+          <!--END OF THE FORM-->
+
   </body>
 </html>
